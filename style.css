@@ -170,7 +170,7 @@ body {
 }
 
 .main-content__read-more::before {
-  content: url(/kata/assets/icons/ic-expand/icon.svg);
+  content: url(/webcore/assets/icons/ic-expand/icon.svg);
   position: absolute;
   left: 25px;
 }
