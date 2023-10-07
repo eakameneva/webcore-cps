@@ -1,19 +1,31 @@
 @font-face {
   font-family: "TT Lakes";
+  font-weight: 400;
+  src: url(/webcore/fonts/TTLakes/TTLakes-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  src: url(/webcore/fonts/TTLakes/TTLakes-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 600;
+  src: url(/webcore/fonts/TTLakes/TTLakes-DemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
   font-weight: 700;
   src: url(/webcore/fonts/TTLakes/TTLakes-Bold.woff) format("woff");
 }
 
 @font-face {
   font-family: "TT Lakes";
-  font-weight: 600;
-  src: url(/webcore/fonts/TTLakes/TTLakes-Medium.woff) format("woff");
-}
-
-@font-face {
-  font-family: "TT Lakes";
-  font-weight: 400;
-  src: url(/webcore/fonts/TTLakes/TTLakes-Regular.woff) format("woff");
+  font-weight: 800;
+  src: url(/webcore/fonts/TTLakes/TTLakes-ExtraBold.woff) format("woff");
 }
 
 * {
@@ -39,10 +51,16 @@ body {
   gap: 16px;
 }
 
-.header__button {
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   border: none;
-  background: none;
-  padding: 0;
+  background: #ff3e79;
+  padding: 15px;
 }
 
 .header__tablet-buttons {
@@ -109,6 +127,7 @@ body {
   margin-top: 24px;
   padding-left: 16px;
   gap: 20px;
+  list-style: none;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -164,15 +183,15 @@ body {
 
 .main-content__read-more {
   color: #1b1c21;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   margin: 16px 0 16px 48px;
 }
 
 .main-content__read-more::before {
-  content: url(/webcore/assets/icons/ic-expand/icon.svg);
+  content: url(/webcore/assets/expand.svg);
   position: absolute;
-  left: 25px;
+  left: 21px;
 }
 
 .main-content__image {
@@ -221,6 +240,10 @@ body {
     bottom: 8px;
   }
 
+  .main-content__title {
+    padding-left: 24px;
+  }
+
   .main-content__nav {
     padding-left: 24px;
   }
@@ -247,8 +270,6 @@ body {
   }
 
   .main-content__read-more {
-    color: #1b1c21;
-    line-height: 24px;
     margin: 10px 0 16px 32px;
   }
 
@@ -260,14 +281,20 @@ body {
 @media (min-width: 1120px) {
   .header-section-desktop {
     display: flex;
+    align-items: center;
     gap: 32px;
-  }
-  .desktop-button {
     color: #1b1c21;
-    font-size: 16px;
-    font-family: TT Lakes;
     font-weight: 500;
     line-height: 24px;
+  }
+
+  .button-desription {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+  }
+
+  .desktop-button {
     display: flex;
     align-items: center;
     gap: 9px;
@@ -286,6 +313,7 @@ body {
     justify-content: flex-start;
     overflow: auto;
     padding: 17px 32px 0;
+    margin-top: 0;
   }
 
   .nav__item {
