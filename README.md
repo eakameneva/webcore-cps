@@ -1,1 +1,1 @@
-# webcore
+# https://eakameneva.github.io/webcore/
