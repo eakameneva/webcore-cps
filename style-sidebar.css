@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 400;
+  src: url(/webcore/fonts/TTLakes/TTLakes-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  src: url(/webcore/fonts/TTLakes/TTLakes-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 600;
+  src: url(/webcore/fonts/TTLakes/TTLakes-DemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 700;
+  src: url(/webcore/fonts/TTLakes/TTLakes-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 800;
+  src: url(/webcore/fonts/TTLakes/TTLakes-ExtraBold.woff) format("woff");
+}
+
+body {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  color: #1b1c21;
+  line-height: 24px;
+  max-width: 320px;
+  padding: 19px 24px;
+  margin: 0;
+}
+
+/* header */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #ff3e79;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.7;
+  transition-duration: 0.5s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 55px;
+}
+
+/* main */
+
+.main__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 50px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.option:hover {
+  color: #7e7e82;
+  position: relative;
+  transition: 0.5s;
+}
+
+.main__option:hover::before {
+  content: "";
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  position: absolute;
+  left: -24px;
+  top: -5px;
+  border-radius: 10px;
+}
+
+/* footer */
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 268px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.contact-link--bold {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 12px;
+}
+
+.footer__languages {
+  margin-top: 40px;
+  display: flex;
+  gap: 7px;
+  cursor: pointer;
+}
