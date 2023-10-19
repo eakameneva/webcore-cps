@@ -6,28 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aside</title>
-    <link rel="stylesheet" href="style-sidebar.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header class="header">
+<body class="body-sidebar">
+    <header class="sidebar-header">
         <button class="button"><img src="/webcore/assets/cross.svg" alt="icon"></button>
-        <div class="header__logo">
-            <img src="/webcore/assets/logo.svg" alt="logo">
-        </div>
+        <img class="logo" src="/webcore/assets/logo.svg" alt="logo">
         <button class="button"><img src="/webcore/assets/search.svg" alt="icon"></button>
     </header>
 
-    <main class="main">
-        <ul class="main__list">
-            <li class="main__option option"><a>Ремонт техники</a></li>
-            <li class="main__option option"><a>Услуги и сервисы</a></li>
-            <li class="main__option option"><a>Корпоративным клиентам</a></li>
-            <li class="main__option option"><a>Продавцам техники</a></li>
-            <li class="main__option option"><a>Партнерам</a></li>
-            <li class="main__option option"><a>Производителям</a></li>
-            <li class="main__option option"><a>Наши сервисные центры</a></li>
-            <li class="main__option option"><a>Контакты</a></li>
+    <main class="menu">
+        <ul class="menu__list">
+            <li class="menu__option option"><a>Ремонт техники</a></li>
+            <li class="menu__option option"><a>Услуги и сервисы</a></li>
+            <li class="menu__option option"><a>Корпоративным клиентам</a></li>
+            <li class="menu__option option"><a>Продавцам техники</a></li>
+            <li class="menu__option option"><a>Партнерам</a></li>
+            <li class="menu__option option"><a>Производителям</a></li>
+            <li class="menu__option option"><a>Наши сервисные центры</a></li>
+            <li class="menu__option option"><a>Контакты</a></li>
 
         </ul>
 
@@ -40,14 +38,16 @@
                 <button class="button"><img src="/webcore/assets/chat.svg" alt="icon"></button>
                 <button class="button"><img src="/webcore/assets/profile.svg" alt="icon"></button>
             </div>
-            <a class="contact-link" href="mailto:mail@cps.com">mail@cps.com</a>
-            <a class="contact-link contact-link--bold" href="tel:+88008908900">8 800 890 8900</a>
+            <address class="address">
+                <a class="contact-link" href="mailto:mail@cps.com">mail@cps.com</a>
+                <a class="contact-link contact-link--bold" href="tel:+88008908900">8 800 890 8900</a>
+            </address>
         </div>
-        <div class="footer__languages">
-            <span class="option">RU</span>
-            <span class="option">EN</span>
-            <span class="option">CH</span>
-        </div>
+        <ul class="languages">
+            <li class="option"> <button class="language-button">RU</button></li>
+            <li class="option"> <button class="language-button">EN</button></li>
+            <li class="option"> <button class="language-button">CH</button></li>
+        </ul>
 
     </footer>
 </body>

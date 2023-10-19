@@ -28,12 +28,10 @@
   src: url(/webcore/fonts/TTLakes/TTLakes-ExtraBold.woff) format("woff");
 }
 
-* {
-  margin: 0;
-}
-
 body {
   font-family: "TT Lakes";
+  color: #1b1c21;
+  margin: 0;
 }
 
 /* header */
@@ -62,18 +60,24 @@ body {
   border: none;
   background: #ff3e79;
   padding: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.7;
+  transition-duration: 0.5s;
 }
 
 .header__tablet-buttons {
   display: none;
 }
 
-.header__logo {
+.logo {
   position: relative;
   margin-right: 16px;
 }
 
-.header__logo::after {
+.logo::after {
   content: "";
   width: 2px;
   height: 32px;
@@ -92,6 +96,7 @@ body {
 .main-content__title {
   padding: 0 16px;
   font-size: 28px;
+  margin: 0;
 }
 
 .main-content__title::before {
@@ -121,6 +126,7 @@ body {
 }
 
 .main-content__nav {
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,9 +175,11 @@ body {
   padding: 0 16px;
   margin-top: 24px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.2px;
   color: #1b1c21;
+  margin-bottom: 0;
 }
 
 .main-content__description--tablet {
@@ -217,11 +225,11 @@ body {
     gap: 43px;
   }
 
-  .header__logo::after {
+  .logo::after {
     display: none;
   }
 
-  .header__logo::before {
+  .logo::before {
     content: "";
     width: 2px;
     height: 32px;
@@ -336,4 +344,105 @@ body {
   .main-content__read-more {
     margin-top: 13.78px;
   }
+}
+
+/* sidebar */
+
+.body-sidebar {
+  font-weight: 500;
+  line-height: 24px;
+  max-width: 320px;
+  padding: 19px 24px;
+  margin: 0;
+  box-shadow: 16px 0px 52px rgba(14.49, 23.84, 80.24, 0.2);
+}
+
+/* header-sidebar */
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 55px;
+}
+
+/* main-sidebar */
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 50px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.option:hover {
+  color: #7e7e82;
+  position: relative;
+  transition: 0.5s;
+}
+
+.menu__option:hover::before {
+  content: "";
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  position: absolute;
+  left: -24px;
+  top: -5px;
+  border-radius: 10px;
+}
+
+/* footer-sidebar*/
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 268px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.contact-link--bold {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.languages {
+  margin-top: 40px;
+  margin-bottom: 8px;
+  padding: 0;
+  display: flex;
+  gap: 7px;
+  list-style: none;
+}
+
+.language-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
