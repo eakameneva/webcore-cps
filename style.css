@@ -486,6 +486,9 @@ body {
   padding: 0 16px;
   box-sizing: border-box;
 }
+.services-list__item:hover {
+  box-shadow: inset 3px 3px #eaeaea;
+}
 
 .swiper {
   width: 100%;
@@ -513,6 +516,7 @@ body {
   padding: 0;
   padding-left: 16px;
   padding-top: 16px;
+  padding-bottom: 5px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -561,7 +565,7 @@ body {
   }
 
   .services-list__item {
-    max-width: 224px;
+    min-width: 224px;
     padding: 16px;
   }
   .swiper::after {
@@ -598,10 +602,7 @@ body {
   }
 
   .extra-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 24px;
+    display: block;
   }
 }
 
@@ -610,7 +611,7 @@ body {
     padding: 24px 34px;
   }
   .services-list__item {
-    max-width: 240px;
+    min-width: 240px;
   }
 
   .swiper-slide {

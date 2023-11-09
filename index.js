@@ -34,11 +34,11 @@ window.addEventListener("resize", swiperCard);
 // js expand buttons
 
 const showButton = document.querySelector('.show-button');
-const extraItems = document.querySelector('.extra-items')
+const extraItems = document.querySelectorAll('.extra-items')
 const hideButton = document.querySelector('.hide-button')
 
 function toggle() {
-  extraItems.classList.toggle('hidden')
+  extraItems.forEach(item => item.classList.toggle('hidden'))
   hideButton.classList.toggle('hidden')
   showButton.classList.toggle('hidden')
   }
