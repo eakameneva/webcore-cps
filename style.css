@@ -536,6 +536,10 @@ body {
 
 .button-expand {
   display: none;
+  font-size: 16px;
+  font-family: TT Lakes;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .services-main .hidden {
@@ -608,10 +612,14 @@ body {
 
 @media (min-width: 1120px) {
   .services-main {
-    padding: 24px 34px;
+    padding: 24px 32px;
   }
   .services-list__item {
     min-width: 240px;
+  }
+
+  .services-list {
+    column-gap: 32px;
   }
 
   .swiper-slide {
