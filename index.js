@@ -33,18 +33,24 @@ window.addEventListener("resize", swiperCard);
 
 // js expand buttons
 
-const showButton = document.querySelector('.show-button');
-const extraItems = document.querySelectorAll('.extra-items')
-const hideButton = document.querySelector('.hide-button')
+const buttonExpand = document.querySelector('.button-expand');
+const servicesList = document.querySelector('.services-list');
 
 function toggle() {
-  extraItems.forEach(item => item.classList.toggle('hidden'))
-  hideButton.classList.toggle('hidden')
-  showButton.classList.toggle('hidden')
+ if (buttonExpand.classList.contains('show-button')) {
+  buttonExpand.classList.remove('show-button') 
+  buttonExpand.textContent = 'Скрыть'
+  servicesList.classList.remove('hide-items')
+  buttonExpand.classList.add('hide-button')
+
+ }
+ else { 
+  buttonExpand.classList.add('show-button') 
+  buttonExpand.textContent = 'Показать все'
+  servicesList.classList.add('hide-items')
+  buttonExpand.classList.remove('hide-button')
+ }
   }
 
-showButton.onclick = toggle
-  
-hideButton.onclick = toggle
-
+buttonExpand.onclick = toggle
 
