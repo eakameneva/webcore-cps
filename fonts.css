@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 400;
+  src: url(/webcore/fonts/TTLakes/TTLakes-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  src: url(/webcore/fonts/TTLakes/TTLakes-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 600;
+  src: url(/webcore/fonts/TTLakes/TTLakes-DemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 700;
+  src: url(/webcore/fonts/TTLakes/TTLakes-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 800;
+  src: url(/webcore/fonts/TTLakes/TTLakes-ExtraBold.woff) format("woff");
+}
