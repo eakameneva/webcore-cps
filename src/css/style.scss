@@ -399,10 +399,7 @@ body {
   padding: 16px;
   box-sizing: border-box;
 }
-.item-container:not(.table-header):hover {
-  opacity: 0.3;
-  transition-duration: 0.5s;
-}
+
 .brands-list__item {
   max-width: 240px;
   max-height: 72px;
@@ -507,6 +504,7 @@ body {
   border-radius: 16px;
   gap: 8px;
 }
+
 
 .prices-info {
   display: flex;
@@ -625,11 +623,27 @@ body {
 
 .page-container {
   position: relative;
+  max-width: 1440px;
+  margin: auto; 
+  outline: 1px solid $grey;
 }
 
 .sidebar-footer__contacts {
   margin-top: 32px;
 }
+ .modal {
+    right: 0;
+  }
+
+  .brands-list__item:hover {
+    opacity: 0.5;
+    transition-duration: 0.2s;
+  }
+  .services-list__item:hover {
+    opacity: 0.5;
+    transition-duration: 0.2s;
+  }
+
 
 @media (min-width: 768px) {
   .overlay {
@@ -955,10 +969,6 @@ body {
     width: 440px;
     box-sizing: border-box;
     padding: 32px;
-  }
-
-  .modal {
-    right: 0;
   }
 
   .modal__heading::before {

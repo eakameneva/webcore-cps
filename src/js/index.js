@@ -159,10 +159,12 @@ closeButton.addEventListener('click', function() {
 chatButton.addEventListener('click', function() {
   modalFeedback.classList.toggle('open');
   overlay.classList.add('open');
+  sidebar.classList.remove('open');
   })
   callButton.addEventListener('click', function() {
     modalCall.classList.toggle('open');
     overlay.classList.add('open');
+    sidebar.classList.remove('open');
     })
 
 // tablet
@@ -191,5 +193,15 @@ callFormCloseButton.addEventListener('click', function() {
   overlay.classList.remove('open');
   sidebar.classList.remove('open');
     })
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        if ( modalCall.classList.contains('open') || modalFeedback.classList.contains('open')) {
+        modalCall.classList.remove('open');
+        overlay.classList.toggle('open');
+        modalFeedback.classList.remove('open');
+        }
+      }
+      });
 
 
